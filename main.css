@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #efefef;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+    background-color: #3868d6;
+}
+
+h1 {
+    font-style: italic;
+    color: #fff;
+}
+
+.menu li {
+    display: inline;
+    list-style: none;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sobre-loja {
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.sobre-loja img {
+    max-width: 100%;
+    margin-right: 42px;
+    width: 40%;
+}
+
+.sobre-loja h2 {
+    color: #3868d6;
+    border-bottom: 1px solid #3868d6;
+    padding-bottom: 16px;
+
+}
+
+.sobre-loja p {
+    margin: 32px 0 0;
+}
+
+.lista-produtos {
+    display: flex;
+    justify-content: space-between;
+    margin: 42px 0;
+}
+
+.produtos h2 {
+    color: #3868d6;
+    border-bottom: 1px solid #3868d6;
+    padding-bottom: 16px;
+}
+
+.produtos li {
+    list-style: none;
+    max-width: 24%;
+}
+
+.produtos li img {
+    max-width: 100%;
+}
+
+.lista-produtos h3 {
+    padding: 16px 0;
+    font-size: 1.5em;
+}
+
+.lista-produtos p {
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #3868d6;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .sobre-loja {
+        display: block;
+    }
+
+    .sobre-loja img {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .produtos li {
+        list-style: none;
+        max-width: 100%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .sobre-loja {
+        display: block;
+    }
+
+    .sobre-loja img {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .lista-produtos {
+        display: block;
+    }
+
+    .produtos li {
+        list-style: none;
+        max-width: 100%;
+        margin-bottom: 10%;
+    }
+}
+
